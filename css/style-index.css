@@ -1,0 +1,240 @@
+/* basic settings */
+body {
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color:#333D79;
+    background-color:#333D79;
+    text-align: center;
+}
+
+/* navbar settings */
+#logo__link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav__links {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.6);
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+}
+
+.nav__links #logo {
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+.nav__links ul {
+    list-style: none;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.nav__links ul .nav__item a {
+    line-height: 80px;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav__links ul .nav__item a:hover {
+    background: rgba(0,0,0,0.7);
+    border-radius: 6px;
+}
+
+/* title */
+.hero {
+    background-image: url("../america/xl-american.jpg");;
+    background-size: cover;
+    background-position: 50% 14%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 240px 0px 310px 0px;
+    border-bottom: white solid 2.5px;
+}
+
+#text__hero * {
+    margin: 4px;  
+    color: #333D79;
+}
+
+#text__hero h1 {
+    font-size: 64px;
+    padding-left: 420px;
+    padding-bottom: 0px;
+}
+
+#text__hero h3 {
+    vertical-align: middle;
+    font-size: 37px;
+}
+
+#text__hero p {
+    font-size: 26px;
+    font-style: italic;
+}
+
+/* main pictures in the home page */
+#main__content {
+    background-color: white;
+    outline: #333D79 5px solid;
+    outline-offset: -16px;
+    border-radius: 32px;
+    margin: 32px;
+    padding: 64px 0px;
+}
+
+#little__title {
+    margin: 128px auto 0px auto;
+    width: fit-content;
+    color:white;
+    border-top: white solid 1px;
+    border-bottom: white solid 1px;
+}
+
+.main__text {
+    width: 810px;
+    margin: 0px 32px;
+    padding: 16px;
+}
+
+.main__text h3 {
+    color: #333D79;
+    margin: 0px;
+    padding: 4px 16px;
+}
+
+.main__text h3, .main__text p {
+    width: fit-content;
+    text-align: left;
+}
+
+.main__text h3 a {
+    color: white;
+    text-decoration: none;
+    margin: 0px;
+}
+
+#thing__NH, #thing__Meredith, #thing__WEP, #thing__family, #thing__inter {
+    margin: 64px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#thing__inter > img, #thing__NH > img {
+    width: 25%;
+    outline-offset: 16px;
+    margin: 32px;
+    border-radius: 100%;
+}
+
+#thing__Meredith > img, #thing__WEP > img, #thing__family > img {
+    width: 25%;
+    margin: 32px; 
+    outline-offset: 16px;
+    border-radius: 10px;
+}
+
+#thing__inter img {
+    outline: rgb(176,224,230) 5px solid;
+} 
+#thing__inter h3 {
+    background-color: rgb(176,224,230);
+}
+#thing__inter .main__text {
+    border-top:rgb(176,224,230) 5px solid;
+    border-left:rgb(176,224,230) 5px solid;
+}
+
+#thing__Meredith img {
+    outline: black 5px solid;
+} 
+#thing__Meredith h3 {
+    background-color: black;
+}
+#thing__Meredith .main__text {
+    border-top:black 5px solid;
+    border-left:black 5px solid;
+}
+
+#thing__NH img {
+    outline: crimson 5px solid;
+} 
+#thing__NH h3 {
+    background-color: crimson;
+}
+#thing__NH .main__text {
+    border-top:crimson 5px solid;
+    border-left:crimson 5px solid;
+}
+
+#thing__family img {
+    outline: lightpink 5px solid;
+} 
+#thing__family h3 {
+    background-color: lightpink;
+}
+#thing__family .main__text {
+    border-top:lightpink 5px solid;
+    border-left:lightpink 5px solid;
+}
+
+#thing__WEP img {
+    outline: #B0FFAD 5px solid;
+} 
+#thing__WEP h3 {
+    background-color: #B0FFAD;
+}
+#thing__WEP .main__text {
+    border-top:#B0FFAD 5px solid;
+    border-left:#B0FFAD 5px solid;
+}
+/* footer at the end of the home page */
+.icons__rect {
+    background-color: rgb(255, 255, 255, 0.75);
+    height: 240px;
+    padding: 4px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: white solid 2.5px;
+}
+
+.icon img {
+    width: 100px;
+    padding: 0px 0px 8px 0px;
+    filter: brightness(80%);
+}
+
+.icon a, .icon h2 {
+    margin: 0px;
+    padding: 0px;
+    color: #333D79;
+    text-decoration: none;
+}
+
+.icon h2 {
+    border-bottom: #333D79 2.5px solid;
+}

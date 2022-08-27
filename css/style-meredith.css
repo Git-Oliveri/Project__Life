@@ -1,0 +1,223 @@
+/* basic settings */
+body {
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    background-color: wheat;
+    text-align: center;
+}
+
+/* navbar settings */
+#logo__link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav__links {
+    z-index: 5;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.6);
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+}
+
+.nav__links #logo {
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+.nav__links ul {
+    list-style: none;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.nav__links ul .nav__item a {
+    line-height: 80px;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav__links ul .nav__item a:hover {
+    background: rgba(0,0,0,0.7);
+    border-radius: 6px;
+}
+
+/* title */
+.hero {
+    background-image: url("../Meredith/meredith-vertical.jpg");
+    background-size: cover;
+    background-position: 50% 14%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 240px 0px 300px 0px;
+    margin-bottom: 128px;
+    border-bottom: white solid 2.5px;
+}
+
+#text__hero * {
+    margin: 4px;  
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+
+#text__hero h1 {
+    font-size: 64px;
+    padding-bottom: 0px;
+}
+
+#text__hero h3 {
+    vertical-align: middle;
+    font-size: 37px;
+}
+
+#text__hero p {
+    font-size: 26px;
+    font-style: italic;
+}
+
+/* main important content */
+#little__title {
+    margin: 128px auto 16px auto;
+    padding: 4px 8px;
+    width: fit-content;
+    color: black;
+    text-shadow: 5px 5px 5px white;
+    outline: 1px solid white;
+    outline-offset: 1px;
+    border: black solid 1px;
+}
+
+#giga__content {
+    margin: 16px auto;
+    width: fit-content;
+    background-color: white;
+    border: 7.5px solid white;
+    box-shadow: 20px 20px 15px black;
+}
+
+.content, .letters__line, .reversed__letters__line {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0px;
+}
+
+.content div, .letters, .reversed__letters {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    font-size: 4px;
+}
+
+.letters, .reversed__letters {
+    background-color: rgb(160,82,45,0.9);
+}
+
+.letters h3, .reversed__letters h3 {
+    font-size: 32px;
+    color: white;
+}
+
+.reversed__letters h3, .reversed__letters__line h3 {
+    rotate: 180deg;
+}
+
+.content div p {
+    background-color: rgb(160,82,45,0.9);
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    margin: 0px 0px 2px 0px;
+    padding: 1px 4px;
+    border: none;
+    border-radius: 1px;
+}
+
+.content div img {
+    object-fit: cover;
+    width: 60px;
+    outline: 0.1px rgb(245,222,179,0.5) solid;
+    outline-offset: -1px;
+    margin: 2px 0px 2px 0px;
+}
+
+.square {
+    background-color: black;
+}
+
+.picture {
+    opacity: 0;
+    background-color: white;
+}
+
+.picture:active {
+    font-size: 3px;
+    z-index: 5;
+    transform: scale(10); 
+    opacity: 1;
+    background-color: rgb(0,0,0,0.95);
+    width: 110px;
+    position: absolute;
+    top: 1180px;
+    left: 45.5%;
+    border: 0.5px white double;
+}
+
+#small__picture {
+    object-fit: cover;
+    width: 35px;
+}
+
+/* footer at the end of the home page */
+.icons__rect {
+    background-color: rgba(0,0,0,0.75);
+    margin: 146px 0px 0px 0px;
+    height: 240px;
+    padding: 4px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: white solid 2.5px;
+}
+
+.icon img {
+    width: 100px;
+    padding: 0px 0px 8px 0px;
+    filter: brightness(80%);
+}
+
+.icon a, .icon h2 {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    text-decoration: none;
+}
+
+.icon h2 {
+    border-bottom: white 2.5px solid;
+}

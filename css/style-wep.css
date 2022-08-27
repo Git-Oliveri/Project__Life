@@ -1,0 +1,283 @@
+/* basic settings */
+body {
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color:black;
+    background-color: white;
+    text-align: center;
+}
+
+/* navbar settings */
+#logo__link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav__links {
+    position: fixed;
+    z-index: 5;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.6);
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+}
+
+.nav__links #logo {
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+.nav__links ul {
+    list-style: none;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.nav__links ul .nav__item a {
+    line-height: 80px;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav__links ul .nav__item a:hover {
+    background: rgba(0,0,0,0.7);
+    border-radius: 6px;
+}
+
+/* title */
+.hero {
+    background-image: url("../wep/cool-bus.jpg");
+    background-size: cover;
+    background-position: 50% 14%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 0px 350px 0px;
+    border-bottom: #B0FFAD solid 2.5px;
+}
+
+#text__hero * {
+    margin: 4px;  
+    color:#B0FFAD;
+    text-shadow: 2px 2px 2px black;
+}
+
+#text__hero h1 {
+    font-size: 64px;
+    padding-bottom: 0px;
+}
+
+#text__hero h3 {
+    vertical-align: middle;
+    padding-left: 240px;
+    font-size: 37px;
+}
+
+#text__hero p {
+    font-size: 26px;
+    padding-left: 240px;
+    font-style: italic;
+    text-align: center;
+    text-justify: inter-word;
+    text-decoration: none;
+}
+
+/* answer */
+#answer {
+    background-color: #B0FFAD;
+    border: black 5px double;
+    border-style: double solid solid double;
+    width: 400px;
+    margin: 64px auto;
+    padding: 32px;
+}
+
+#answer img {
+    width: 400px;
+    border-radius: 10px;
+    transition: all 2s ease-in-out;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+    text-decoration: line-through rgb(0, 0, 0, 0.1);
+}
+
+/* american friends */
+#friends {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: #B0FFAD;
+    border: black 5px double;
+    border-style: double solid solid double;
+    margin: 64px 32px;
+    padding: 16px;
+}
+
+.friends__picture {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.friends__picture img {
+    width: 250px;
+    border-radius: 10px;
+    transition: all 2s ease-in-out;
+    margin: 16px;
+}
+
+#friends__text {
+    width: 784px;
+    margin: 0px 32px
+}
+
+/* exchange students */
+#exchange {
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    background-color: #B0FFAD;
+    border: black 5px double;
+    border-style: double solid solid double;
+    margin: 128px 32px;
+    padding: 16px;
+}
+
+#exchange__pictures {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-direction: column;
+}
+
+.exchange__flex {
+    display: flex;
+}
+
+#second__exchange__flex {
+    margin-left: 224px;
+}
+
+.exchange__flex img {
+    height: 300px;
+    border-radius: 10px;
+    transition: all 2s ease-in-out;
+    margin: 16px;
+}
+
+#exchange__text {
+    margin: 104px 16px 16px 16px;
+    height: 300px;
+}
+
+/* airport */
+#airport {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #B0FFAD;
+    border: black 5px double;
+    border-style: double solid solid double;
+    margin: 128px;
+    padding: 16px;
+}
+
+.airport__flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.airport__flex img, #first__airport__flex img, #last__airport__flex img {
+    margin: 16px;
+    width: 300px;
+    border-radius: 10px;
+    transition: all 2s ease-in-out;
+}
+
+#first__airport__flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#first__airport__flex .airport__text {
+    margin: 96px 0px 0px 0px;
+}
+
+#last__airport__flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-start;
+}
+
+.airport__text p {
+    width: 500px;
+    margin: 0px 16px;
+}
+
+/* hover */
+.friends__picture img:hover, .exchange__flex img:hover, .airport__flex img:hover, #first__airport__flex img:hover, #last__airport__flex img:hover, #answer img:hover {
+    filter: grayscale(100%);
+}
+
+/* footer at the end of the home page */
+.icons__rect {
+    background-color: rgb(176,255,173,0.75);
+    margin: 146px 0px 0px 0px;
+    height: 240px;
+    padding: 4px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: black solid 2.5px;
+}
+
+.icon img {
+    width: 100px;
+    padding: 0px 0px 8px 0px;
+    filter: brightness(80%);
+}
+
+.icon a, .icon h2 {
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.icon p {
+    margin: 16px 0px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.icon h2 {
+    border-bottom: black 2.5px solid;
+}

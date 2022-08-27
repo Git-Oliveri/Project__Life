@@ -1,0 +1,303 @@
+/* basic settings */
+body {
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(176,224,230);
+    background-color: white;
+    text-align: center;
+}
+
+/* navbar settings */
+#logo__link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav__links {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.6);
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+}
+
+.nav__links #logo {
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+.nav__links ul {
+    list-style: none;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.nav__links ul .nav__item a {
+    line-height: 80px;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav__links ul .nav__item a:hover {
+    background: rgba(0,0,0,0.7);
+    border-radius: 6px;
+}
+
+/* title */
+.hero {
+    background-image: url("../school/true-inter.jpeg");
+    background-size: cover;
+    background-position: 50% 14%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 0px 420px 0px;
+    border-bottom: black solid 2.5px;
+}
+
+#text__hero * {
+    margin: 4px;  
+    color: rgb(176,224,230);
+    text-shadow: 5px 5px 5px black;
+}
+
+#text__hero h1 {
+    padding-left: 360px;
+    font-size: 64px;
+    padding-bottom: 0px;
+}
+
+#text__hero h3 {
+    font-size: 37px;
+    padding-left: 300px;
+}
+
+#text__hero p {
+    font-size: 26px;
+    font-style: italic;
+    padding-left: 360px;
+}
+
+/* google maps */
+.canvas {
+    margin: 128px auto;
+    width:1200px;
+    background-color: rgb(176,224,230);
+    border: double 5px black;
+    border-radius: 15px;
+    color: black;
+    padding: 8px;
+}
+
+iframe {
+    width:1000px;
+    height:500px; 
+}
+
+.canvas a {
+    color: black;
+}
+
+/* the three teachers */
+#little__title {
+    background-color: rgb(176,224,230);
+    color: black;
+    margin: 128px auto 32px auto;
+    padding: 4px 16px;
+    width: fit-content;
+    border-radius: 15px;
+    border: black double 5px;
+}
+
+#teachers__rect {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px 4px 128px 4px;
+}
+
+.teacher {
+    width: 440px;
+    background-color: rgb(176,224,230);
+    border: double 5px black;
+    border-radius: 15px;
+    color: black;
+    padding: 16px 8px;
+}
+
+.teacher img {
+    width: 75%;
+}
+
+/* graduation content */
+#graduation {
+    background-color: rgb(176,224,230);
+    border: double 5px black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 128px 16px;
+    padding: 16px;
+}
+
+.graduation__pictures {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.graduation__pictures img, #graduation img {
+    border: none;
+    border-radius: 15px;
+    width: 500px;
+    margin: 16px;
+}
+
+.graduation__text {
+    margin: 16px;
+    padding: 4px;
+    color: black;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* track and field */
+#track {
+    background-color: rgb(176,224,230);
+    border: double 5px black;
+    border-radius: 15px;
+    margin: 128px 16px;
+}
+
+#track__flex {
+    display: flex;
+    align-items: center;
+    margin: 16px 16px 0px 92px;
+}
+
+.track__pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+}
+
+#track__big__picture {
+    border: none;
+    border-radius: 15px;
+    width: 700px;
+    margin: 16px 16px 0px 16px;
+}
+
+.track__pictures img {
+    border: none;
+    border-radius: 15px;
+    width: 400px;
+    margin: 16px;
+}
+
+.track__text {
+    color: black;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 16px;
+    padding: 4px;
+}
+
+/* prom section */
+#prom {
+    background-color: rgb(176,224,230);
+    border: double 5px black;
+    border-radius: 15px;
+    margin: 128px 16px;
+}
+
+#prom__videos {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+#prom__videos video {
+    border: none;
+    border-radius: 15px;
+    width: 400px;
+    margin: 16px;
+}
+
+.prom__flex img {
+    border: none;
+    border-radius: 15px;
+    width: 300px;
+    margin: 16px;
+}
+
+.prom__flex {
+    display: flex;
+    margin: 0px 16px 16px 92px;
+    align-items: center;
+}
+
+#golden {
+    margin-bottom: 48px;
+}
+
+.prom__text {
+    width: 600px;
+    color: black;
+    text-align: justify;
+    align-items: center;
+    text-justify: inter-word;
+    margin: 16px;
+    padding: 4px;
+}
+
+/* footer at the end of the home page */
+.icons__rect {
+    background-color: rgb(176,224,230,0.75);
+    height: 240px;
+    padding: 4px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: black solid 2.5px;
+}
+
+.icon img {
+    width: 100px;
+    padding: 0px 0px 8px 0px;
+    filter: brightness(80%);
+}
+
+.icon a, .icon h2 {
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    text-decoration: none;
+}
+
+.icon h2 {
+    border-bottom: black 2.5px solid;
+}
