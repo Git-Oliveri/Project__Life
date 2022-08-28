@@ -224,33 +224,43 @@ body {
 }
 
 @keyframes first__animation {
-    from {
+    0% {
         left: -600px;
+        filter: opacity(1);
+    }
+    50% {
+        left: 0px;
         filter: opacity(0.5);
     }
-    to {
+    100% {
         left: 600px;
         filter: opacity(1);
     }
 }
 
 @keyframes second__animation {
-    from {
+    0% {
         left: 600px;
+        filter: opacity(1);
+    }
+    50% {
+        left: 0px;
         filter: opacity(0.5);
     }
-    to {
+    100% {
         left: -600px;
         filter: opacity(1);
     }
 }
 
-#first, #third, #fifth, #seventh, #nineth, #eleventh {
+.first {
     animation: first__animation 10s linear infinite; 
+    transition: all 2s ease-in-out;
 }
 
-#second, #fourth, #sixth, #eighth, #tenth, #twelveth {
-    animation: second__animation 10s linear infinite; 
+.second {
+    animation: second__animation 10s linear infinite;
+    transition: all 2s ease-in-out; 
 }
 
 .box {
@@ -284,6 +294,12 @@ body {
     padding: 4px 16px;
     background-color: rgb(255,182,193);
     border-radius: 10px;
+}
+
+/* active images */
+.first:active, .second:active {
+    width: 480px !important; 
+    filter:opacity(1) !important; 
 }
 
 /* footer at the end of the home page */
